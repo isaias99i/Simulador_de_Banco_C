@@ -320,7 +320,8 @@ void transferencia(int id_us) //id_us serve para referenciar o usuário logado
 void saque(int id_us) //id_us serve para referenciar o usuário logado
 {
   float valor_sq = 0;
-  printf("\nDigite o Valor que deseja sacar:");
+  printf("\n\tSAQUE\n");
+  printf("\nDigite o Valor:");
   scanf("%f", &valor_sq);
   if (valor_sq > saldo[id_us])
   {
@@ -336,7 +337,8 @@ void saque(int id_us) //id_us serve para referenciar o usuário logado
 void deposito(int id_us) //id_us serve para referenciar o usuário logado
 {
   float valor_dp = 0;
-  printf("\nDigite o Valor que deseja depositar:");
+  printf("\n\tDEPÓSITO\n");
+  printf("\nDigite o Valor:");
   scanf("%f", &valor_dp);
   if (valor_dp <= 0)
   {
@@ -356,7 +358,7 @@ int cadastro()
   char nvUsuario;
 
   system("cls || clear");
-  printf("Cadastro de um novo cliente\n");
+  printf("\n\tCADASTRO\n");
   printf("Digite seu nome: ");
   scanf("%s", &nome[cadastrados]);
   printf("\nDefina uma senha para o novo usuário: ");
